@@ -16,7 +16,7 @@ x <- glider1$lon_uv
 y <- glider1$lat_uv
 plot(x, y, "b", main = "Glider 583", xlab = "Longitude", ylab = "Latitude")
 
-#Filter out all data except for the first 30,000 rows;
+#Filter out all data except for the first 30,000 rows comprising a single cross-shelf transect;
 #Assign this dataset new name, glider2 and plot the glider movement on a map.
 
 glider2 <- filter(glider, distance <30000)
